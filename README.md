@@ -1,111 +1,111 @@
 # 📰 AI News Credibility Analyzer
 
-An AI-powered web application that detects whether a news article is **Real** or **Fake** using Machine Learning and Deep Learning models. The system also verifies the prediction using the GNews API and provides a final credibility verdict.
+An AI-powered application that predicts whether a news article is **Real** or **Fake** using Machine Learning and verifies the article using trusted online news sources.
 
 ---
 
-# 📌 Project Objective
+## Features
 
-The objective of this project is to reduce the spread of misinformation by automatically analysing news articles and predicting their credibility using Artificial Intelligence.
-
----
-
-# ✨ Features
-
-- Predicts whether news is Real or Fake
-- Accepts both News URL and News Text
-- Extracts article content automatically from supported websites
-- Uses three AI models for prediction
-- Displays confidence score
+- Predicts Fake or Real News
+- Supports News URL and News Text
+- Extracts article automatically from URLs
+- Article statistics (Words, Characters, Sentences)
+- Confidence Score
 - Online verification using GNews API
 - Final credibility verdict
-- Modern Streamlit user interface
-- Error handling for invalid URLs and empty input
+- AI-generated explanation
+- Download prediction report
+- Multiple prediction models
 
 ---
 
-# 🧠 Models Used
-
-### 1. Logistic Regression
-- TF-IDF Vectorization
-- Fast prediction
-- Good baseline accuracy
-
-### 2. Random Forest
-- TF-IDF Vectorization
-- Ensemble Machine Learning model
-- Robust against overfitting
-
-### 3. DistilBERT
-- Transformer-based NLP model
-- Understands context and semantics
-- Highest prediction accuracy
-
----
-
-# 📊 Model Performance
+## Machine Learning Models
 
 | Model | Accuracy |
 |--------|----------|
-| Logistic Regression | 99.06% |
-| Random Forest | 98%+ |
-| DistilBERT | 99.89% |
+| Logistic Regression | 89.25% |
+| Random Forest | 62.12% |
+| DistilBERT | 99.95% |
+
+Users can switch between models directly from the sidebar.
 
 ---
 
-# 🌍 Online Verification
-
-After prediction, the application searches trusted news sources using the **GNews API** to verify whether similar articles exist online.
-
-This improves the reliability of the final prediction.
-
----
-
-# 🛠️ Technology Stack
+## Tech Stack
 
 - Python
 - Streamlit
 - Scikit-learn
-- Transformers (Hugging Face)
-- DistilBERT
+- Transformers (DistilBERT)
+- Newspaper3k
+- BeautifulSoup
+- GNews API
 - Pandas
 - NumPy
-- Newspaper3k
-- Joblib
-- GNews API
-- HTML & CSS
 
 ---
 
-# 📂 Project Structure
+## Project Structure
 
 ```
-AI-NEWS-CREDIBILITY/
-│
-├── data/
-├── models/
-│   ├── logistic_regression.pkl
-│   ├── random_forest.pkl
-│   ├── tfidf_vectorizer.pkl
-│   └── distilbert_model/
+AI-News-Credibility-Analyzer
 │
 ├── streamlit_app/
 │   ├── app.py
 │   ├── style.css
-│   └── .env
+│   └── assets/
 │
+├── src/
+│
+├── notebooks/
+│
+├── README.md
+├── MODELS.md
+├── DATASET.md
 ├── requirements.txt
-└── README.md
+└── LICENSE
 ```
 
 ---
 
-# 🚀 Installation
+# Application Screenshots
+
+## Home Page
+
+![Home](screenshots/home.png)
+
+---
+
+## Real News Prediction
+
+![Real Prediction](screenshots/real_prediction.png)
+
+---
+
+## Final Verdict (Real News)
+
+![Final Verdict Real](screenshots/final_verdict_real.png)
+
+---
+
+## Fake News Prediction
+
+![Fake Prediction](screenshots/fake_prediction.png)
+
+---
+
+## Final Verdict (Fake News)
+
+![Final Verdict Fake](screenshots/final_verdict_fake.png)
+
+---
+
+## Installation
 
 Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/HetikPatel26/AI-News-Credibility-Analyzer.git
 ```
 
 Install dependencies
@@ -114,88 +114,51 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Run Streamlit
+Run the application
 
 ```bash
-streamlit run app.py
+streamlit run streamlit_app/app.py
 ```
 
 ---
 
-# 📈 Workflow
+## Models
 
-1. User enters News URL or News Text
-2. Article is extracted and cleaned
-3. User selects AI model
-4. Model predicts Real/Fake
-5. Confidence score is generated
-6. GNews API verifies the news
-7. Final credibility verdict is displayed
+The trained models are not included in this repository due to GitHub size limitations.
+
+See **MODELS.md** for instructions.
 
 ---
 
-# 📸 Screenshots
+## Dataset
 
-Add screenshots of:
+The original datasets are excluded because of GitHub size limits.
 
-- Home Page
-- Real News Prediction
-- Fake News Prediction
-- Online Verification
-- Final Verdict
+See **DATASET.md** for download instructions.
 
 ---
 
-# ✅ Advantages
+## Future Improvements
 
-- Easy to use
-- Supports both URL and text input
-- Multiple AI models
-- High prediction accuracy
-- Online news verification
-- Fast predictions
-- Modern interface
-
----
-
-# ⚠️ Limitations
-
-- Some websites block article extraction
-- GNews Free API has a delay for recent news
-- Performance depends on article availability
-- Internet connection is required for online verification
-
----
-
-# 🔮 Future Scope
-
-- Multi-language news detection
-- Image and video fake news detection
+- Support multiple news APIs
+- Explainable AI (XAI)
+- Multilingual support
 - Browser extension
 - Mobile application
-- Real-time social media fact checking
-- Explainable AI visualisations
+- Live misinformation monitoring
 
 ---
 
-# 👨‍💻 Developed By
+## License
 
-**Diploma Final Year Project**
-
-AI News Credibility Analyzer
+This project is released under the MIT License.
 
 ---
 
-# 📄 License
+## Author
 
-This project is developed for educational purposes.
-## Note
+**Hetik Patel**
 
-The trained models are not included in this repository because the complete model directory is approximately 1 GB.
+Diploma in Computer Engineering
 
-To run the project, place the following files inside the `models/` folder:
-
-- logistic_regression.pkl
-- random_forest.pkl
-- tfidf_vectorizer.pkl
-- distilbert_model/
+AI News Credibility Analyzer – AI/ML Project
