@@ -1,7 +1,7 @@
 ---
 title: AI News Credibility Analyzer
 emoji: 📰
-colorFrom: orange
+colorFrom: blue
 colorTo: gray
 sdk: gradio
 sdk_version: 6.22.0
