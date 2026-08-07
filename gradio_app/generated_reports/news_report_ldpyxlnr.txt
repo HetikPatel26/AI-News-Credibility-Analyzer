@@ -1,0 +1,9 @@
+AI NEWS CREDIBILITY REPORT
+
+Prediction       : FAKE
+Confidence       : 98.61% (🟢 High)
+Model Used       : DistilBERT
+Related Articles : 0
+
+Final Verdict:
+🔴 LIKELY FAKE

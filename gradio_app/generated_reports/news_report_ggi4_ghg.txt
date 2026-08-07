@@ -1,0 +1,9 @@
+AI NEWS CREDIBILITY REPORT
+
+Prediction       : REAL
+Confidence       : 64.92% (🟠 Low)
+Model Used       : Logistic Regression
+Related Articles : 0
+
+Final Verdict:
+🟢 LIKELY REAL

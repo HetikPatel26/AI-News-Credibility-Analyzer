@@ -1,0 +1,9 @@
+AI NEWS CREDIBILITY REPORT
+
+Prediction       : FAKE
+Confidence       : 66.94% (🟠 Low)
+Model Used       : Random Forest
+Related Articles : 0
+
+Final Verdict:
+🔴 LIKELY FAKE
