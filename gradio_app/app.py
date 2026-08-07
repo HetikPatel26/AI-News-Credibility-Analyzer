@@ -524,7 +524,10 @@ def register_analyze_handler(trigger):
         show_progress="full",
     )
 
-with gr.Blocks(title="AI News Credibility Analyzer", css=custom_css) as demo:
+with open("gradio_app/style.css", "r", encoding="utf-8") as f:
+    custom_css = f.read()
+    
+with gr.Blocks(title="AI News Credibility Analyzer") as demo:
 
     sidebar_state = gr.State(False)
 
@@ -703,4 +706,8 @@ with gr.Blocks(title="AI News Credibility Analyzer", css=custom_css) as demo:
     """)
 
 
-    demo.queue().launch()
+    demo.queue()
+
+    demo.launch(
+        css=custom_css
+    )

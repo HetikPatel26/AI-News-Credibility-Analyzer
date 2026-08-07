@@ -6,3 +6,4 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .vscode/
+gradio_app/generated_reports/
