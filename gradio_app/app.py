@@ -706,8 +706,21 @@ with gr.Blocks(title="AI News Credibility Analyzer") as demo:
     """)
 
 
-    demo.queue()
+    if __name__ == "__main__":
+        demo.queue().launch(
+            css=custom_css,
+            server_name="127.0.0.1",
+            server_port=7860
+        )
+import os
 
-    demo.launch(
-        css=custom_css
+# ... all your app code above ...
+
+if __name__ == "__main__":
+    is_huggingface = os.getenv("SPACE_ID") is not None
+
+    demo.queue().launch(
+        css=custom_css,
+        server_name="0.0.0.0" if is_huggingface else "127.0.0.1",
+        server_port=7860
     )
